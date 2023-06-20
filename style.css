@@ -132,6 +132,8 @@ a {
     display: grid;
     grid-template-rows: 1fr;
     width: 100%;
+    justify-items: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
 
 }
 
@@ -146,9 +148,10 @@ a {
 }
 
 .container img {
-    width: 200px;
+    width: 300px;
     height: auto;
-    border-radius: 20px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .container h1 {
@@ -177,6 +180,7 @@ a {
     position: relative;
     animation: moveUpDown 3s infinite;
     margin-bottom: 40px;
+    border-radius: 0px;
 }
 
 .tecno img:hover {
