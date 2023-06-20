@@ -1,0 +1,296 @@
+:root {
+    --colorFondo: rgb(20, 20, 20);
+    --colorDestaco: rgb(0, 0, 0);
+    --sombraWhite: 5px 5px 15px rgb(255, 255, 255);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+body {
+    background-color: var(--colorFondo);
+
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    background-color: var(--colorDestaco);
+    z-index: 1;
+}
+
+.navbar span img {
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    width: 700px;
+    align-self: center;
+    margin-right: 20px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+
+
+}
+
+.navbar li:hover {
+    transform: scale(1.1);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: red;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.navbar ul li a:hover {
+    background-color: green;
+
+}
+
+.icon-menu {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* aqui estara el menu desplegado para el mobile */
+
+.menuMobile {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 60px;
+    height: auto;
+    position: fixed;
+}
+
+.menuMobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--colorDestaco);
+    padding: 8px;
+}
+
+.menuMobile ul li {
+    margin: 3px;
+}
+
+.menuMobile a {
+    font-size: 30px;
+    border: dashed white 1px;
+    background-color: red;
+}
+
+.menuMobile a:hover {
+    background-color: green;
+}
+
+.inactive {
+    display: none;
+}
+
+/* aqui empieza el Contenido principal */
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+
+}
+
+.container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 80px 10px 10px 10px;
+    gap: 10px;
+    padding: 30px;
+}
+
+.container img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.container h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    width: 80%;
+    padding: 8px;
+    background-color: var(--colorDestaco);
+    border-radius: 20px;
+    text-align: justify;
+    animation: brillo 5s infinite;
+}
+
+.tecno {
+    display: flex;
+    justify-content: stretch;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 10px 100px 10px;
+}
+
+.tecno img {
+    position: relative;
+    animation: moveUpDown 3s infinite;
+    margin-bottom: 40px;
+}
+
+.tecno img:hover {
+    transform: scale(1.7);
+}
+
+@keyframes moveUpDown {
+    0% {
+        top: 0;
+        /* Posición inicial (arriba) */
+    }
+
+    50% {
+        top: 25px;
+        /* Posición intermedia (abajo) */
+    }
+
+    100% {
+        top: 0;
+        /* Posición final (arriba) */
+    }
+}
+
+@keyframes brillo {
+    0% {
+        box-shadow: var(--sombraWhite);
+        /* Posición inicial (arriba) */
+    }
+
+    50% {
+        box-shadow: 5px 5px 100px red;
+        /* Posición intermedia (abajo) */
+    }
+
+    100% {
+        box-shadow: var(--sombraWhite);
+        /* Posición final (arriba) */
+    }
+}
+
+footer {
+    background-color: var(--colorDestaco);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+.footcontain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+
+}
+
+.social-Media ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 200px;
+    animation: carucel 20s infinite linear;
+}
+
+.social-Media:hover ul {
+    animation-play-state: paused;
+    /* Pausar la animación cuando el cursor está sobre el carrusel */
+}
+
+@keyframes carucel {
+    0% {
+        transform: translateX(600px);
+
+    }
+
+    100% {
+        transform: translateX(-600px);
+    }
+}
+
+.social-Media img {
+    width: 50px;
+}
+
+.social-Media li:nth-child(1) {
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+
+/* Aqui estaran los mediaQuery */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* este media quiere decir que si pasa de esa resolucion se activara el codigo */
+    .icon-menu {
+        display: none;
+    }
+
+    .menuMobile {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
