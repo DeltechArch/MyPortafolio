@@ -21,6 +21,9 @@
     margin: 150px 10px 10px 10px;
     border-radius: 20px;
 }
+.descripcion .mision{
+    margin-top: 25px;
+}
 
 
 
@@ -28,6 +31,13 @@
     .descripcion div{
         width: 80%;
         margin: 100px 10px 10px 10px;
+    }
+    
+}
+@media screen and (min-width:768px) {
+    .descripcion .mision{
+        margin-top: 150px;
+
     }
     
 }
