@@ -230,6 +230,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 100px;
+    margin-top: 20px;
 }
 footer div {
     text-align: center;
@@ -238,8 +239,9 @@ footer div {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    width: 200px;
+    width: 30%;
     animation: carucel 15s infinite linear;
+    padding-top: 5px;
 }
 
 .social-Media:hover ul {
@@ -249,12 +251,12 @@ footer div {
 
 @keyframes carucel {
     0% {
-        transform: translateX(600px);
+        transform: translateX(1250px);
 
     }
 
     100% {
-        transform: translateX(-600px);
+        transform: translateX(-400px);
     }
 }
 

@@ -4,55 +4,30 @@
     --sombraWhite:5px 5px 15px rgb(255, 255, 255); 
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: white;
-
-}
-
-
 /* Acerca de  */
 .descripcion{
     display: flex;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
 
 }
 .descripcion div{
     animation: brillo 5s infinite;
-
-}
-.descripcion .vision{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    height: auto;
     background-color: var(--colorDestaco);
+    width: 40%;
     padding: 15px;
-    margin-top: 75px;
+    margin: 150px 10px 10px 10px;
     border-radius: 20px;
 }
-.descripcion .mision{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    height: auto;
-    background-color: var(--colorDestaco);
-    padding: 15px;
-    margin-top: 50px;
-    border-radius: 20px;
-    
 
-}
+
 
 @media screen and (max-width: 768px) {
     .descripcion div{
         width: 80%;
+        margin: 100px 10px 10px 10px;
     }
     
 }
