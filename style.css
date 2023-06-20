@@ -148,9 +148,9 @@ a {
 }
 
 .container img {
-    width: 300px;
+    width: 150px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 20%;
     object-fit: cover;
 }
 
