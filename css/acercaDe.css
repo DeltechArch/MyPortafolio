@@ -22,19 +22,32 @@
 
 }
 .descripcion div{
+    animation: brillo 5s infinite;
+
+}
+.descripcion .vision{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 40%;
     height: auto;
-    row-gap: 30px;
     background-color: var(--colorDestaco);
     padding: 15px;
-    margin-top: 100px;
+    margin-top: 75px;
     border-radius: 20px;
-    animation: brillo 5s infinite;
+}
+.descripcion .mision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    background-color: var(--colorDestaco);
+    padding: 15px;
+    margin-top: 50px;
+    border-radius: 20px;
     
+
 }
 
 @media screen and (max-width: 768px) {

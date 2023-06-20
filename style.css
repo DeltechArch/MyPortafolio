@@ -173,13 +173,14 @@ a {
     justify-content: stretch;
     flex-direction: column;
     align-items: center;
-    margin: 60px 10px 100px 10px;
+    margin: 10px 10px 100px 10px;
 }
 
 .tecno img {
     position: relative;
-    animation: moveUpDown 3s infinite;
+    animation: moveUpDown 5s infinite;
     margin-bottom: 40px;
+    margin-top: 20px;
     border-radius: 0px;
 }
 
@@ -189,19 +190,19 @@ a {
 
 @keyframes moveUpDown {
     0% {
-        top: 0;
+        left: -80px;
         /* Posición inicial (arriba) */
     }
-
     50% {
-        top: 25px;
+        left:80px;
         /* Posición intermedia (abajo) */
     }
 
     100% {
-        top: 0;
+        left: -80px;
         /* Posición final (arriba) */
     }
+    
 }
 
 @keyframes brillo {
@@ -222,28 +223,23 @@ a {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: var(--colorDestaco);
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 100px;
-
 }
-
-.footcontain {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2px;
-
+footer div {
+    text-align: center;
 }
-
 .social-Media ul {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     width: 200px;
-    animation: carucel 20s infinite linear;
+    animation: carucel 15s infinite linear;
 }
 
 .social-Media:hover ul {
@@ -263,12 +259,12 @@ footer {
 }
 
 .social-Media img {
-    width: 50px;
+    width: 40px;
 }
 
 .social-Media li:nth-child(1) {
     background-color: white;
-    border-radius: 50%;
+    border-radius: 70%;
 }
 
 
