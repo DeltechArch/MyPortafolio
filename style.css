@@ -132,7 +132,7 @@ a {
 }
 
 /* aqui empieza el Contenido principal */
-.container {
+#container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -141,7 +141,7 @@ a {
 
 }
 
-.container article {
+#container article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,19 +151,19 @@ a {
     padding: 30px;
 }
 
-.container img {
+#container img {
     width: 150px;
     height: auto;
     border-radius: 20%;
     object-fit: cover;
 }
 
-.container h1 {
+#container h1 {
     font-size: 25px;
     margin-bottom: 20px;
 }
 
-.container p {
+#container p {
     width: 80%;
     padding: 8px;
     background-color: var(--colorDestaco);
@@ -175,7 +175,7 @@ a {
 
 /* aqui estan las tecnologias  */
 
-.tecno {
+#tecno {
     display: flex;
     justify-content: stretch;
     flex-direction: column;
@@ -183,7 +183,7 @@ a {
     margin: 100px 10px 200px 10px;
 }
 
-.tecno img {
+#tecno img {
     position: relative;
     animation: moveUpDown 5s infinite;
     margin-bottom: 40px;
@@ -191,7 +191,7 @@ a {
     border-radius: 0px;
 }
 
-.tecno img:hover {
+#tecno img:hover {
     transform: scale(1.7);
 }
 
@@ -290,7 +290,7 @@ footer div:nth-child(2){
     .navbar ul {
         display: none;
     }
-    .container {
+    #container {
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
