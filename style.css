@@ -117,13 +117,9 @@ a {
 
 .menuMobile a {
     font-size: 30px;
-    border: dashed white 1px;
-    background-color: red;
 }
 
-.menuMobile a:hover {
-    background-color: green;
-}
+
 
 .inactive {
     display: none;
