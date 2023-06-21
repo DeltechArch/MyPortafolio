@@ -99,6 +99,8 @@ a {
     margin-top: 60px;
     height: auto;
     position: fixed;
+    top: 0;
+    z-index: 2;
 }
 
 .menuMobile ul {
@@ -132,7 +134,7 @@ a {
 /* aqui empieza el Contenido principal */
 .container {
     display: grid;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
     justify-items: center; /* Centra horizontalmente los elementos */
     align-items: center; /* Centra verticalmente los elementos */
@@ -170,19 +172,22 @@ a {
     animation: brillo 5s infinite;
 }
 
+
+/* aqui estan las tecnologias  */
+
 .tecno {
     display: flex;
     justify-content: stretch;
     flex-direction: column;
     align-items: center;
-    margin: 10px 10px 100px 10px;
+    margin: 100px 10px 200px 10px;
 }
 
 .tecno img {
     position: relative;
     animation: moveUpDown 5s infinite;
     margin-bottom: 40px;
-    margin-top: 20px;
+    margin-top: 80px;
     border-radius: 0px;
 }
 
@@ -190,6 +195,45 @@ a {
     transform: scale(1.7);
 }
 
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorDestaco);
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.social-Media {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.social-Media ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 80%;
+    animation: creceer 2s infinite;
+    padding-top: 5px;
+}
+.social-Media li{
+    margin: 20px 20px 0px 20px;
+}
+footer div:nth-child(2){
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.social-Media:hover ul {
+    animation-play-state: paused;
+    /* Pausar la animación cuando el cursor está sobre el carrusel */
+}
+
+/* estas son las animaciones */
 @keyframes moveUpDown {
     0% {
         left: -80px;
@@ -224,41 +268,9 @@ a {
     }
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--colorDestaco);
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-footer div {
-    text-align: center;
-}
-.social-Media ul {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    width: 30%;
-    animation: carucel 15s infinite linear;
-    padding-top: 5px;
-}
-
-.social-Media:hover ul {
-    animation-play-state: paused;
-    /* Pausar la animación cuando el cursor está sobre el carrusel */
-}
-
-@keyframes carucel {
-    0% {
-        transform: translateX(1250px);
-
-    }
-
-    100% {
-        transform: translateX(-400px);
+@keyframes creceer {
+    0%{
+        transform: scale(1.3);
     }
 }
 
@@ -278,6 +290,14 @@ footer div {
     .navbar ul {
         display: none;
     }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+    
+    }
 }
 
 
@@ -292,9 +312,5 @@ footer div {
         display: none;
     }
 
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
 }
