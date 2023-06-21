@@ -1,7 +1,7 @@
 :root {
-    --colorFondo: rgb(20, 20, 20);
-    --colorDestaco: rgb(0, 0, 0);
-    --sombraWhite:5px 5px 15px rgb(255, 255, 255); 
+    --colorFondo: rgb(5, 100, 84);
+    --colorDestaco: rgb(34, 147, 128);
+    --sombraWhite: 5px 5px 15px rgb(255, 255, 255);
 }
 
 /* Acerca de  */
@@ -35,7 +35,7 @@
         grid-template-columns: 1fr;
         justify-items: center; /* Centra horizontalmente los elementos */
         align-items: center; /* Centra verticalmente los elementos */
-        margin-top: 75px;
+        margin-top: 100px;
     }
     .descripcion .mision{
         margin-bottom: 150px;

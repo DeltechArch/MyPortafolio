@@ -1,6 +1,6 @@
 :root {
-    --colorFondo: rgb(20, 20, 20);
-    --colorDestaco: rgb(0, 0, 0);
+    --colorFondo: rgb(5, 100, 84);
+    --colorDestaco: rgb(34, 147, 128);
     --sombraWhite: 5px 5px 15px rgb(255, 255, 255);
 }
 
@@ -14,10 +14,9 @@
 
 body {
     background-color: var(--colorFondo);
-    width: 100%;
-    height: 100%;
 
 }
+
 
 li {
     list-style: none;
@@ -69,13 +68,12 @@ a {
 .navbar ul li a {
     text-decoration: none;
     border-radius: 20px;
-    background-color: red;
     padding: 8px;
     font-size: 20px;
 }
 
 .navbar ul li a:hover {
-    background-color: green;
+    background-color: var(--colorFondo);
 
 }
 
@@ -136,6 +134,7 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+    height: 100%;
     justify-items: center; /* Centra horizontalmente los elementos */
     align-items: center; /* Centra verticalmente los elementos */
 
@@ -169,7 +168,7 @@ a {
     background-color: var(--colorDestaco);
     border-radius: 20px;
     text-align: justify;
-    animation: brillo 5s infinite;
+    max-width: 350px;
 }
 
 
@@ -177,10 +176,12 @@ a {
 
 #tecno {
     display: flex;
-    justify-content: stretch;
+    justify-content: center;
     flex-direction: column;
+    height: 100%;
     align-items: center;
     margin: 100px 10px 200px 10px;
+
 }
 
 #tecno img {
@@ -201,10 +202,10 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: var(--colorDestaco);
-    position:fixed;
-    bottom: 0;
     width: 100%;
-    height: auto;
+    position: fixed;
+    bottom: 0;
+    height: 70px;
     margin-top: 20px;
 }
 .social-Media {
@@ -215,10 +216,7 @@ footer {
 .social-Media ul {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
     width: 80%;
-    animation: creceer 2s infinite;
-    padding-top: 5px;
 }
 .social-Media li{
     margin: 20px 20px 0px 20px;
@@ -226,61 +224,31 @@ footer {
 footer div:nth-child(2){
     text-align: center;
     margin-bottom: 10px;
+    font-size: 10px;
 }
 
-.social-Media:hover ul {
-    animation-play-state: paused;
-    /* Pausar la animación cuando el cursor está sobre el carrusel */
+.social-Media img {
+    width: 25px;
 }
+
+
 
 /* estas son las animaciones */
 @keyframes moveUpDown {
     0% {
-        left: -80px;
+        left: -30px;
         /* Posición inicial (arriba) */
     }
     50% {
-        left:80px;
+        left:30px;
         /* Posición intermedia (abajo) */
     }
 
     100% {
-        left: -80px;
+        left: -30px;
         /* Posición final (arriba) */
     }
     
-}
-
-@keyframes brillo {
-    0% {
-        box-shadow: var(--sombraWhite);
-        /* Posición inicial (arriba) */
-    }
-
-    50% {
-        box-shadow: 5px 5px 100px red;
-        /* Posición intermedia (abajo) */
-    }
-
-    100% {
-        box-shadow: var(--sombraWhite);
-        /* Posición final (arriba) */
-    }
-}
-
-@keyframes creceer {
-    0%{
-        transform: scale(1.3);
-    }
-}
-
-.social-Media img {
-    width: 40px;
-}
-
-.social-Media li:nth-child(1) {
-    background-color: white;
-    border-radius: 70%;
 }
 
 
@@ -294,9 +262,13 @@ footer div:nth-child(2){
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
+        height: 100%;
         justify-items: center; /* Centra horizontalmente los elementos */
         align-items: center; /* Centra verticalmente los elementos */
     
+    }
+    #tecno{
+        margin: 30px 10px 150px 10px;
     }
 }
 
