@@ -6,48 +6,28 @@
 
 /* Acerca de  */
 .descripcion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    justify-items: center; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
-    margin: 150px 10px 10px 10px;
-    gap: 40px;
-    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
 }
 .descripcion div{
-    animation: brillo 5s infinite;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    gap: 10px;
+    padding: 30px;
+    
+}
+.descripcion p{
+    padding: 10px;
     background-color: var(--colorDestaco);
-    padding: 15px;
     border-radius: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    text-align: justify;
 }
 
 
-
-
-@media screen and (max-width: 768px) {
-    .descripcion{
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center; /* Centra horizontalmente los elementos */
-        align-items: center; /* Centra verticalmente los elementos */
-        margin-top: 80px;
-    }
-    .descripcion .mision{
-        margin-bottom: 60px;
-    }
-
-}
-
-
-
-@media screen and (min-width:769px) {
-    /* este media quiere decir que si pasa de esa resolucion se activara el codigo */
-    .descripcion div{
-        max-width: 300px;
-    }
-}
