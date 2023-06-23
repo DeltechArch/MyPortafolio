@@ -127,21 +127,20 @@ a {
 
 /* aqui empieza el Contenido principal */
 #container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    height: 100%;
-    justify-items: center; /* Centra horizontalmente los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
 }
 
 #container article {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    margin: 80px 10px 10px 10px;
+    max-width: 320px;
     gap: 10px;
     padding: 30px;
 }
@@ -156,16 +155,15 @@ a {
 #container h1 {
     text-align: center;
     font-size: 25px;
-    margin-bottom: 20px;
+    
 }
 
 #container p {
-    width: 80%;
-    padding: 8px;
+    padding: 10px;
     background-color: var(--colorDestaco);
     border-radius: 20px;
     text-align: justify;
-    max-width: 350px;
+    
 }
 
 
@@ -173,20 +171,19 @@ a {
 
 #tecno {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    height: 100%;
+    justify-content: center;
     align-items: center;
-    margin: 100px 10px 200px 10px;
+    max-width: 320px;
+    gap: 10px;
+    padding: 30px;
 
 }
 
 #tecno img {
-    position: relative;
     animation: moveUpDown 5s infinite;
-    margin-bottom: 40px;
-    margin-top: 80px;
     border-radius: 0px;
+    margin-top: 40px;
 }
 
 #tecno img:hover {
@@ -203,23 +200,26 @@ footer {
     position: fixed;
     bottom: 0;
     height: 60px;
-    
+
 }
+
 .social-Media {
     display: flex;
     justify-content: center;
     text-align: center;
 }
+
 .social-Media ul {
     display: flex;
     justify-content: center;
     width: 80%;
 }
-.social-Media li{
-    margin: 5px 20px 0px 20px
 
+.social-Media li {
+    margin: 5px 20px 0px 20px
 }
-footer div:nth-child(2){
+
+footer div:nth-child(2) {
     text-align: center;
     margin-bottom: 10px;
     font-size: 12px;
@@ -237,8 +237,9 @@ footer div:nth-child(2){
         left: -30px;
         /* Posición inicial (arriba) */
     }
+
     50% {
-        left:30px;
+        left: 30px;
         /* Posición intermedia (abajo) */
     }
 
@@ -246,7 +247,7 @@ footer div:nth-child(2){
         left: -30px;
         /* Posición final (arriba) */
     }
-    
+
 }
 
 
@@ -256,18 +257,7 @@ footer div:nth-child(2){
     .navbar ul {
         display: none;
     }
-    #container {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        height: 100%;
-        justify-items: center; /* Centra horizontalmente los elementos */
-        align-items: center; /* Centra verticalmente los elementos */
-    
-    }
-    #tecno{
-        margin: 30px 10px 150px 10px;
-    }
+
 }
 
 
