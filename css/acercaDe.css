@@ -45,7 +45,7 @@
 
 
 
-@media screen and (min-width:767px) {
+@media screen and (min-width:769px) {
     /* este media quiere decir que si pasa de esa resolucion se activara el codigo */
     .descripcion div{
         max-width: 300px;
