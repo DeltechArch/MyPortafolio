@@ -35,10 +35,10 @@
         grid-template-columns: 1fr;
         justify-items: center; /* Centra horizontalmente los elementos */
         align-items: center; /* Centra verticalmente los elementos */
-        margin-top: 100px;
+        margin-top: 80px;
     }
     .descripcion .mision{
-        margin-bottom: 150px;
+        margin-bottom: 60px;
     }
 
 }
