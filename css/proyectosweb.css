@@ -26,16 +26,18 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 230px;
-    margin:10px 5px 10px 5px;
     row-gap: 10px;
-    background-color: var(--colorDestaco);
+    min-width: 280px;
+    background: transparent;
+    backdrop-filter: blur(20px);
     padding: 10px;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .card img {
     width: 200px;
+    height: 200px;
     object-fit: contain;
     border-radius: 10px;
 }
@@ -43,9 +45,10 @@
 .card button {
     width: 30%;
     height: 30px;
-    background-color: var(--colorFondo);
+    background: none;
     border: none;
     cursor: pointer;
+    border: 1px solid white;
 }
 
 .card button:hover {
@@ -54,7 +57,7 @@
 
 @keyframes colorido {
     0% {
-        color: var(--colorDestaco);
+        color: rgb(0, 191, 255);
     }
 
     100% {

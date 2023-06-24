@@ -2,6 +2,7 @@
     --colorFondo: rgb(5, 100, 84);
     --colorDestaco: rgb(34, 147, 128);
     --sombraWhite: 5px 5px 15px rgb(255, 255, 255);
+    
 }
 
 * {
@@ -13,7 +14,9 @@
 }
 
 body {
-    background-color: var(--colorFondo);
+    background-image: url(./assets/imagens/Aifondo.png);
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
 
 }
 
@@ -34,14 +37,19 @@ a {
     border-bottom: 1px solid white;
     position: fixed;
     top: 0;
-    background-color: var(--colorDestaco);
+    background: transparent;
+    backdrop-filter: blur(12px);
     z-index: 1;
 }
 
-.navbar span img {
-    width: 100px;
+.navbar img {
+    width: 60px;
     height: 60px;
     object-fit: contain;
+    background-color: rgba(255, 255, 255, 0.285);
+    border-radius: 50px;
+    
+    
 
 
 }
@@ -49,10 +57,8 @@ a {
 .navbar ul {
     display: flex;
     justify-content: space-around;
-    width: 700px;
+    width: 85%;
     align-self: center;
-    margin-right: 20px;
-
 }
 
 .navbar ul li {
@@ -72,10 +78,7 @@ a {
     font-size: 20px;
 }
 
-.navbar ul li a:hover {
-    background-color: var(--colorFondo);
 
-}
 
 .icon-menu {
     width: 100px;
@@ -107,7 +110,8 @@ a {
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: var(--colorDestaco);
+    background: transparent;
+    backdrop-filter: blur(20px);
     padding: 8px;
 }
 
@@ -131,8 +135,6 @@ a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 60px;
-    margin-bottom: 60px;
-
 }
 
 #container article {
@@ -140,29 +142,38 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 320px;
+    min-width:  320px;
+    max-width: 400px;
     gap: 10px;
     padding: 30px;
 }
 
-#container img {
+.fotoPeril{
     width: 150px;
-    height: auto;
-    border-radius: 20%;
+    height: 150px;
+    border-radius: 50%;
     object-fit: cover;
+    border: 1px dotted white;
 }
 
-#container h1 {
+h1 {
     text-align: center;
+    padding: 10px;
     font-size: 25px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
     
 }
 
-#container p {
+p {
     padding: 10px;
-    background-color: var(--colorDestaco);
+    background: transparent;
+    backdrop-filter: blur(20px);
     border-radius: 20px;
     text-align: justify;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
     
 }
 
@@ -174,15 +185,19 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 320px;
+    min-width: 320px;
+    max-width: 400px;
     gap: 10px;
     padding: 30px;
 
 }
 
 #tecno img {
+    width: 150px;
+    height: 150px;
     border-radius: 0px;
     margin-top: 40px;
+    object-fit: contain;
 }
 
 
@@ -190,12 +205,33 @@ a {
     transform: scale(1.7);
 }
 
+/* la descricion de mision y vision  */
+.descripcion{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+}
+.descripcion div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 320px;
+    gap: 10px;
+    padding: 30px;
+    
+}
+
 
 
 footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--colorDestaco);
+    background: transparent;
+    backdrop-filter: blur(12px);
     width: 100%;
     position: fixed;
     bottom: 0;
