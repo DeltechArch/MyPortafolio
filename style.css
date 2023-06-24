@@ -14,9 +14,10 @@
 }
 
 body {
-    background-image: url(./assets/imagens/Aifondo.png);
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url(./assets/imagens/Aifondo.svg);
+    background-repeat: repeat-y; /* Evita que la imagen se repita */
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    height: 100vh;
 
 }
 
