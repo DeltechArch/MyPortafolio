@@ -54,6 +54,7 @@
     border: none;
     cursor: pointer;
     border: 1px solid white;
+    backdrop-filter: blur(12px);
 }
 
 .card button:hover {

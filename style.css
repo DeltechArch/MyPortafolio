@@ -17,7 +17,7 @@ body {
     background-image: url(./assets/imagens/Aifondo.svg);
     background-repeat: repeat-y; /* Evita que la imagen se repita */
     background-size: cover; /* Hace que la imagen cubra todo el fondo */
-    height: 100vh;
+    
 
 }
 
@@ -47,7 +47,7 @@ a {
     width: 60px;
     height: 60px;
     object-fit: contain;
-    background-color: rgba(255, 255, 255, 0.285);
+    backdrop-filter: blur(12px);
     border-radius: 50px;
     
     
@@ -209,9 +209,9 @@ p {
 /* la descricion de mision y vision  */
 .descripcion{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: start;
     flex-wrap: wrap;
-    margin-top: 60px;
     margin-bottom: 60px;
 
 }
@@ -219,7 +219,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     max-width: 320px;
     gap: 10px;
     padding: 30px;
