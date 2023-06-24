@@ -118,12 +118,24 @@ a {
 
 .menuMobile ul li {
     margin: 3px;
+    animation: colorido .8s infinite;
 }
+
 
 .menuMobile a {
     font-size: 30px;
+    animation: colorido .8s infinite;
 }
 
+@keyframes colorido {
+    0% {
+        color: rgb(0, 191, 255);
+    }
+
+    100% {
+        color: white;
+    }
+}
 
 
 .inactive {
@@ -262,6 +274,7 @@ footer div:nth-child(2) {
     width: 30px;
     background-color: white;
     border-radius: 50%;
+    border: 2px solid white;
 }
 
 
