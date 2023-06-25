@@ -166,7 +166,7 @@ a {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px dotted white;
+    border: 5px solid white;
 }
 
 h1 {
