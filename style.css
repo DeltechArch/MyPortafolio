@@ -14,11 +14,7 @@
 }
 
 body {
-    background-image: url(./assets/imagens/Aifondo.svg);
-    background-repeat: repeat-y; /* Evita que la imagen se repita */
-    background-size: cover; /* Hace que la imagen cubra todo el fondo */
-    
-
+    background-image: linear-gradient(to bottom, #083b85, #00589f, #0075b6, #2393cb, #46b1de);
 }
 
 
@@ -173,8 +169,6 @@ h1 {
     text-align: center;
     padding: 10px;
     font-size: 25px;
-    background: transparent;
-    backdrop-filter: blur(12px);
     border-radius: 20px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     
@@ -182,12 +176,8 @@ h1 {
 
 p {
     padding: 10px;
-    background: transparent;
-    backdrop-filter: blur(12px);
-    border-radius: 20px;
-    text-align: justify;
+    text-align: center;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    
 }
 
 

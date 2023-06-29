@@ -1,0 +1,29 @@
+body{
+    background-image: linear-gradient(to bottom, #083b85, #00589f, #0075b6, #2393cb, #46b1de);
+}
+
+.descipcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.Room{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.Room article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    width: 80%;
+}
+.Room img{
+    width: 200px;
+}
