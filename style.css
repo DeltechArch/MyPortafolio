@@ -58,12 +58,24 @@ a {
     border-radius: 50px;
     margin: 3px;
     
-    
-
-
 }
 
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    text-align: center;
+}
+.links li{
+    margin-top: 30px;
+}
 
+.links li a{
+    font-size: 30px;
+    background-color: var(--colorDestaco);
+    border-radius: 20px;
+    padding: 5px;
+}
 
 
 
