@@ -5,11 +5,7 @@ const link = document.getElementsByTagName("a");
 
 iconMobile.addEventListener("click", menuDesplegable);
 window.addEventListener("resize", verificandoAncho);
-link.addEventListener("click", closedMobile);
 
-for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", closedMobile);
-}
 
 
 function menuDesplegable() {

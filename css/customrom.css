@@ -13,8 +13,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-
+    align-items: center;
+    margin-bottom: 70px;
 }
 .Room article {
     display: flex;
@@ -23,6 +23,7 @@ body{
     align-items: center;
     border: 1px solid white;
     width: 80%;
+    border-radius: 20px;
 }
 .Room img{
     width: 200px;
