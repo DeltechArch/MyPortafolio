@@ -41,13 +41,14 @@ a {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     height: 60px;
     position: fixed;
     top: 0;
-    background-color: #3478de;
+    background-color:var(--colorDestaco);
     z-index: 1;
+    align-items: center;
 }
 
 .navbar img {
