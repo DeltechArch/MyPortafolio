@@ -46,139 +46,21 @@ a {
     width: 100%;
     height: 60px;
 }
-
-.navbar img {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
-    background-color: white;
-    border-radius: 50px;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: space-around;
-    width: 85%;
-    align-self: center;
-}
-
-.navbar ul li {
-    list-style: none;
-
-
-}
-
-.navbar li:hover {
-    transform: scale(1.1);
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    border-radius: 20px;
-    padding: 8px;
-    font-size: 20px;
-}
-
-
-
-.icon-menu {
-    width: 100px;
-    height: 60px;
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* aqui estara el menu desplegado para el mobile */
-
-.menuMobile {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-    margin-top: 60px;
-    height: auto;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-}
-
-.menuMobile ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    background: transparent;
-    backdrop-filter: blur(20px);
-    padding: 8px;
-}
-
-.menuMobile ul li {
-    margin: 3px;
-    animation: colorido .8s infinite;
-}
-
-
-.menuMobile a {
-    font-size: 30px;
-    animation: colorido .8s infinite;
-}
-
-@keyframes colorido {
-    0% {
-        color: rgb(0, 191, 255);
-    }
-
-    100% {
-        color: white;
-    }
-}
-
-
-.inactive {
-    display: none;
-}
-
-/* aqui empieza el Contenido principal */
-#container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 60px;
-}
-
-#container article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-width:  320px;
-    max-width: 400px;
-    gap: 10px;
-    padding: 30px;
-}
-
-.fotoPeril{
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid white;
-}
-
-h1 {
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+.navbar a{
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
     border: 2px solid white;
+
 }
 .navbar > a::after{
     content: "🏠";
 }
+
+
+
+
+
+
+
 
 .links{
     display: flex;
