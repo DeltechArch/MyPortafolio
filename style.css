@@ -1,7 +1,6 @@
 :root {
-    --colorFondo: rgb(5, 100, 84);
-    --colorDestaco: rgb(34, 147, 128);
-    --sombraWhite: 5px 5px 15px rgb(255, 255, 255);
+    --colorFondo: #ffffff;
+    --colorBarras: #0080FF;
     
 }
 
@@ -14,13 +13,22 @@
 }
 
 body {
-    background-image: url(./assets/imagens/Aifondo.svg);
-    background-repeat: repeat-y; /* Evita que la imagen se repita */
-    background-size: cover; /* Hace que la imagen cubra todo el fondo */
-    
-
+    background-color:  var(--colorFondo);
 }
 
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
 
 li {
     list-style: none;
@@ -31,16 +39,12 @@ a {
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: var(--colorBarras);
+    place-items: center;
     width: 100%;
     height: 60px;
-    border-bottom: 1px solid white;
-    position: fixed;
-    top: 0;
-    background: transparent;
-    backdrop-filter: blur(12px);
-    z-index: 1;
 }
 
 .navbar img {
@@ -168,110 +172,53 @@ a {
 h1 {
     text-align: center;
     padding: 10px;
-    font-size: 25px;
-    background: transparent;
-    backdrop-filter: blur(12px);
-    border-radius: 20px;
+    font-size: 20px;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    
+    border: 2px solid white;
+}
+.navbar > a::after{
+    content: "🏠";
 }
 
-p {
-    padding: 10px;
-    background: transparent;
-    backdrop-filter: blur(12px);
-    border-radius: 20px;
-    text-align: justify;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
-    
-}
-
-
-/* aqui estan las tecnologias  */
-
-#tecno {
+.links{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 100px;
     align-items: center;
-    min-width: 320px;
-    max-width: 400px;
-    gap: 10px;
-    padding: 30px;
-
 }
-
-#tecno img {
-    width: 150px;
-    height: 150px;
-    border-radius: 0px;
-    margin-top: 40px;
-    object-fit: contain;
+.links ul li {
+    background-color: var(--colorBarras);
+    width: 130px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
-
-
-#tecno img:hover {
-    transform: scale(1.7);
+.links ul li:active{
+    transform: scale(.9);
 }
-
-/* la descricion de mision y vision  */
-.descripcion{
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-    margin-bottom: 60px;
-
-}
-.descripcion div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 320px;
-    gap: 10px;
-    padding: 30px;
-    
-}
-
 
 
 footer {
     display: flex;
     flex-direction: column;
-    background: transparent;
-    backdrop-filter: blur(12px);
     width: 100%;
     position: fixed;
     bottom: 0;
     height: 60px;
-    border-top: 1px solid white;
+    background-color: var(--colorBarras);
 
 }
 
 .social-Media {
     display: flex;
+    justify-items: center;
+    align-items: center;
     justify-content: center;
-    text-align: center;
+    flex-wrap: wrap;
     
 }
 
-.social-Media ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 320px;
-}
-
-footer div:nth-child(2) {
-    text-align: center;
-    font-size: 12px;
-}
-
-.social-Media img {
-    width: 30px;
-    background-color: white;
-    border-radius: 50%;
-    border: 2px solid white;
-}
 
 
 
@@ -279,25 +226,4 @@ footer div:nth-child(2) {
 
 
 
-/* Aqui estaran los mediaQuery */
-@media screen and (max-width: 768px) {
-    .navbar ul {
-        display: none;
-    }
 
-}
-
-
-@media screen and (min-width: 769px) {
-
-    /* este media quiere decir que si pasa de esa resolucion se activara el codigo */
-    .icon-menu {
-        display: none;
-    }
-
-    .menuMobile {
-        display: none;
-    }
-
-
-}
