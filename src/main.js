@@ -29,7 +29,7 @@ function mostrarEducacion(){
     h2Educacion =  document.createElement("h2");
     h2Educacion.innerHTML = "Platzi";
     pEducacion =  document.createElement("p");
-    pEducacion.innerHTML ="27 de Diciembre 2022";
+    pEducacion.innerHTML ="27/Diciembre/2022";
 
     divEducacion.appendChild(h2Educacion);
     divEducacion.appendChild(pEducacion);

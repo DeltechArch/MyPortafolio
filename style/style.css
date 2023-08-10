@@ -87,13 +87,15 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 10px 0 10px;
+    gap: 1rem;
+    justify-items: center;
 }
 
 .links ul li a{
     background-color: var(--colorBarras);
-    width: auto;
     text-align: center;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    padding: 3.5px
 }
 .links ul li:active{
     transform: scale(.9);
@@ -120,6 +122,12 @@ a {
 
 .Educacion{
     background-color: var(--colorBarras);
+}
+.Educacion div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    margin-left: 1.5rem;
 }
 
 
