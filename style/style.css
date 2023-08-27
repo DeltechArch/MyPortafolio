@@ -73,8 +73,7 @@ a {
 
 .tituloPrincipal{
     background-color: var(--colorBarras);
-    width: 80%;
-    margin: 2rem auto;
+    margin: 0 3rem 0 3rem;
     text-align: start;
 }
 
@@ -110,6 +109,7 @@ a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 0 3rem 0 3rem;
 }
 .Perfil img{
     margin: 1rem;
@@ -123,12 +123,12 @@ a {
 
 .Educacion{
     background-color: var(--colorBarras);
+    margin: 0 3rem 0 3rem;
 }
 .Educacion div{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    justify-items: start;
-    margin-left: 1.5rem;
+    justify-items: center;
 }
 
 
