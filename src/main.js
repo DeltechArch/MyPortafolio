@@ -22,13 +22,13 @@ function mostrarEducacion(){
     const divEducacion = document.createElement('DIV');
     divEducacion.innerHTML = `
     <p>Platzi</p>
-    <p>27-Diciembre-2022</p>
+    <span>27-Diciembre-2022</span>
 
     <p>Udemy</p>
-    <p>21-Agosto-2023</p>
+    <span>21-Agosto-2023</span>
     
     <p>Ingles-Udemy</p>
-    <p>10-Enero-2024</p>
+    <span>10-Enero-2024</span>
     `;
 
     Educacion.appendChild(divEducacion);
