@@ -121,15 +121,17 @@ a {
     border: 2px solid white;
 }
 
-.Educacion{
+#Educacion{
     background-color: var(--colorBarras);
     margin: 0 3rem 0 3rem;
 }
-.Educacion div{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#Educacion div{
+    Display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
     justify-items: center;
 }
+
 
 
 footer {

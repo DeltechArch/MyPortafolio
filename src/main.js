@@ -17,30 +17,22 @@ mostrarPerfil();
 
 
 function mostrarEducacion(){
-    const sectionEducacion = document.getElementById("Educacion");
+    const Educacion = document.querySelector('#Educacion');
 
-    h1Educacion = document.createElement("h1");
-    h1Educacion.innerHTML = "Educacion:";
-    divEducacion = document.createElement("div");
+    const divEducacion = document.createElement('DIV');
+    divEducacion.innerHTML = `
+    <p>Platzi</p>
+    <p>27-Diciembre-2022</p>
 
-    //primer educacion    
-    h2Platzi =  document.createElement("h2");
-    h2Platzi.innerHTML = "Platzi";
-    pPlatzi =  document.createElement("p");
-    pPlatzi.innerHTML ="27/Diciembre/2022";
-
-    // otra educacion
-    h2Udemy = document.createElement("h2");
-    h2Udemy.innerHTML = "Udemy";
-    pUdemy =  document.createElement("p");
-    pUdemy.innerHTML ="21/agosto/2023";
-
-    divEducacion.appendChild(h2Platzi);
-    divEducacion.appendChild(pPlatzi);
-    divEducacion.appendChild(h2Udemy);
-    divEducacion.appendChild(pUdemy);
+    <p>Udemy</p>
+    <p>21-Agosto-2023</p>
     
-    sectionEducacion.appendChild(h1Educacion);
-    sectionEducacion.appendChild(divEducacion);
+    <p>Ingles-Udemy</p>
+    <p>10-Enero-2024</p>
+    `;
+
+    Educacion.appendChild(divEducacion);
+
+
 }
 mostrarEducacion();
